@@ -31,9 +31,10 @@ class Sling(object):
         self.name = None
         self.auth = Auth()
         log('DB Exists => %s\r%s' % (str(xbmcvfs.exists(DB_PATH)), DB_PATH))
-        if not xbmcvfs.exists(DB_PATH):
+        if not xbmcvfs.exists(DB_PATH) and SETTINGS.getSetting(id='Use_Slinger') == false and SETTINGS.getSetting(id='Custom_Path') == true:
+            self.DB = sqlite3.connect(DB_PATH_COPY)
+        else:
             self.createDB()
-        self.DB = sqlite3.connect(DB_PATH)
 
         self.getParams()
 

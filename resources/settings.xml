@@ -7,6 +7,8 @@
 
     <category label="30119">
         <setting id="Use_Slinger"  type="bool"   label="30119" default="false" />
+        <setting id="Custom_Path" type="bool" label="30148"  default="false" enable="eq(-1,false)" />
+        <setting id="DB_Location" type="folder" label="30149"  default="special://profile/addon_data/plugin.video.sling" source="files" option="writeable" enable="eq(-1,true)" />
         <setting label="30118" type="lsep" />
         <setting id="Channels_Update" type="action" label="30137" action="RunPlugin(plugin://plugin.video.sling/?mode=setting&name=update_channels&value=true)" option="close" enable="eq(-2,true)" />
         <setting id="Guide_Update" type="action" label="30138" action="RunPlugin(plugin://plugin.video.sling/?mode=setting&name=update_guide&value=true)" option="close" enable="eq(-3,true)" />

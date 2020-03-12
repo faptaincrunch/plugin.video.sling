@@ -251,3 +251,11 @@ msgstr ""
 msgctxt "#30147"
 msgid "Open guide on startup"
 msgstr ""
+
+msgctxt "#30148"
+msgid "Use Database from shared location"
+msgstr ""
+
+msgctxt "#30149"
+msgid "Database Directory"
+msgstr ""

@@ -149,6 +149,9 @@ class Slinger(object):
             self.checkUpdateIntervals()
 
         self.close()
+        xbmc.log("Copying Databse file... ")
+        xbmcvfs.copy(DB_PATH, DB_COPY_PATH)
+        xbmc.log("COPIED Database file!!! ")
 
     def checkTracker(self):
         log('Slinger Service: checkTracker()')

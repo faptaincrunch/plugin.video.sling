@@ -7,8 +7,6 @@
 
     <category label="30119">
         <setting id="Use_Slinger"  type="bool"   label="30119" default="false" />
-        <setting id="Custom_Path" type="bool" label="30148"  default="false" enable="eq(-1,false)" />
-        <setting id="DB_Location" type="folder" label="30149"  default="special://profile/addon_data/plugin.video.sling" source="files" option="writeable" enable="eq(-1,true)" />
         <setting label="30118" type="lsep" />
         <setting id="Channels_Update" type="action" label="30137" action="RunPlugin(plugin://plugin.video.sling/?mode=setting&name=update_channels&value=true)" option="close" enable="eq(-2,true)" />
         <setting id="Guide_Update" type="action" label="30138" action="RunPlugin(plugin://plugin.video.sling/?mode=setting&name=update_guide&value=true)" option="close" enable="eq(-3,true)" />
@@ -28,6 +26,8 @@
         <setting label="30136" type="lsep" />
     </category>
     <category label="30130">
+        <setting id="Custom_Path" type="bool" label="30148"  default="false" />
+        <setting id="DB_Location" type="folder" label="30149"  default="special://profile/addon_data/plugin.video.sling" source="files" option="writeable" enable="eq(-1,true)" />
         <setting id="Delete_DB" type="action" label="30131" action="RunPlugin(plugin://plugin.video.sling/?mode=setting&name=delete_db&value=true)" option="close" />
         <setting id="Debug" type="text" label="30135" default="" />
         <setting id="Reset_Hidden" type="action" label="30143" action="RunPlugin(plugin://plugin.video.sling/?mode=setting&name=reset_hidden&value=true)" option="close" />
